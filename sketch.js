@@ -1,215 +1,361 @@
+let bg;
+let centerImg;
+let barbielogo;
+let sparklelinergif;
 
-let img;
+let screen = 0; // 0 = main screen, 1 = new screen with dolls, 2/3/4 = childhood
+let barbiedoll1, barbiedoll2, barbiedoll3;
+let lilly, tanya, ana;
 
-let notif = false;
-let notif2 = false;
-let notif3 = false;
-let notif4 = false;
-let notif5 = false;
-/*positive notifications*/
-let positive = false;
-let purpleheart = false;
+let tanyaphoto, tanyaphoto1, tanyaphoto2, tanyaphoto3, tanyaphoto4;
 
-let quote = [];
-let posquotes = ["YOU CAN'T GIVE UP NOW", "its okay you've tried you're best", "everything will be fine", "take some rest", "stay determined"]
+let tanyabg;
+
+let afghanbg;
+
+let lillybg;
+
+let anaphone, anaphone1, anaphone2, anaphone3, anaphone4, anaphone5, anaphone6;
+
+let lillyphoto1, lillyphoto2, lillyphoto3;
+let lillyphoto4, lillyphoto5, lillyphoto6;
+
+let tanyatitle, anatitle, lillytitle;
 
 
+function preload() {
+//second barbie dolls//
+
+barbiedoll1 = loadImage('images/barbiedoll1.png')
+barbiedoll2 = loadImage('images/barbiedoll2.png')
+barbiedoll3 = loadImage('images/barbiedoll3.png')
+
+//text of names
+lilly = loadImage('images/Lilly-23-04-2026.png')
+ana = loadImage ('images/Anahita-23-04-2026.png')
+tanya = loadImage ('images/Tanya-Jade-23-04-2026.png')
 
 
-  function preload(){
+//tanyas page//
+tanyaphoto= loadImage('images/photobooth1.png')
+tanyaphoto1= loadImage('images/camera.png')
+tanyaphoto2= loadImage('images/polariod1.png')
+tanyaphoto3= loadImage('images/polariod2.png')
+tanyaphoto4= loadImage('images/photobooth2.png')
 
-    img = loadImage('images/background of my laptop.png');
+tanyabg = loadImage('images/tanyabg.jpg')
 
-  }
+//anas page//
+anaphone= loadImage('images/anaphone.PNG')
+anaphone1= loadImage('images/anaphone1.PNG')
+anaphone2= loadImage('images/anaphone4.PNG')
+anaphone3= loadImage('images/anaphone3.PNG')
+anaphone4= loadImage('images/anaphone2.PNG')
+anaphone5= loadImage('images/anaphone5.PNG')
+anaphone6= loadImage('images/anaphone6.PNG')
+
+afghanbg= loadImage('images/afghanbg.JPEG');
+
+
+//lillys page//
+lillyphoto1= loadImage('images/lilly1.jpg')
+lillyphoto2= loadImage('images/lilly2.jpg')
+lillyphoto3= loadImage('images/lilly3.jpg')
+lillyphoto4= loadImage('images/lilly4.jpg')
+lillyphoto5= loadImage('images/lilly5.jpg')
+lillyphoto6= loadImage('images/lilly6.PNG')
+
+lillybg= loadImage('images/lillybg.png');
+
+bg = loadImage('images/Untitled design-9.png');
+centerImg = loadImage ('images/barbiehead.png');
+barbielogo = loadImage('images/BarbieLogo.gif');
+sparklelinergif= loadImage('images/sparkleliner.gif');
+
+tanyatitle = loadImage('images/Precious-memories-of-Tanya-in-04-05-2026.png');
+anatitle = loadImage('images/A-glimpse-into-Ana-s-childhood-04-05-2026.png');
+lillytitle = loadImage('images/A-peek-into-Lilly-s-younger-ye-04-05-2026.png')
+
+}
 
 function setup() {
-   createCanvas(windowWidth, windowHeight);
- 
-}
-/* letter heart emoji */
-function draw(){
-  background(img);
-  textSize(190)
-  text("💌", 645, 410);
-  
-/* first notification */
-  if (notif == true) {
-  stroke(0, 57, 230);
-  strokeWeight(4);
-  fill(77, 163, 255)
-  rect(550, 260, 430, 230);
-
-  /* ADDING MY TEXT AND X EMOJI */
-  fill(0, 0, 128)
-  noStroke()
-  textSize(20)
-  textStyle(BOLD)
-  fill('black')
-  textAlign(CENTER, TOP);
-  text("Hahah you're not going to", 760, 350);
-  textAlign(CENTER, CENTER)
-  text("finish this in timeee", 760, 390)
-  text("❌", 570, 280);
-  
-  } 
-  /*second notification*/
-  if (notif2 == true) {
-  stroke(0, 57, 230);
-  strokeWeight(4);
-  fill(77, 163, 255)
-  rect(400, 230, 430, 230);
-  /* MY TEXT */
-  fill(0, 0, 128)
-  noStroke()
-  textSize(20)
-  textStyle(BOLD)
-  fill('black')
-  text("yeah this isn't good enough", 615, 346);
-  text("❌", 423, 250);
-
-  }
-/* third notification */
-if (notif3 == true) {
-  stroke(0, 57, 230);
-  strokeWeight(4);
-  fill(77, 163, 255)
-  rect(900, 170, 430, 230);
-
-/* text */
-noStroke()
-  textSize(20)
-  textStyle(BOLD)
-  fill('black')
-  text("okay now you're just slacking", 1117, 284);
-  text("❌", 930, 190);
-}
-
-/* FOURTH notification */
-if (notif4 == true) {
-  stroke(0, 57, 230);
-  strokeWeight(4);
-  fill(77, 163, 255)
-  rect(700, 430, 430, 230);
-/*text*/
-noStroke()
-textSize(20)
-textStyle(BOLD)
-  fill('black')
-  text("ugh just give up already", 915, 546);
-  text("❌", 725, 450);
-}
-
-/* FIFTH notification */
-if (notif5 == true) {
-  stroke(0, 57, 230);
-  strokeWeight(4);
-  fill(77, 163, 255)
-  rect(200, 335, 430, 230);
-/*text*/
-noStroke()
-textSize(20)
-textStyle(BOLD)
-  fill('black')
-  text("THIS IS GETTING BORING!!", 410, 455);
-  text("❌", 220, 356);
-}
-
-/* first positive notification */
-if (positive == true && purpleheart == false) {
-  stroke(204, 0, 153);
-  strokeWeight(8);
-  fill(255, 153, 230)
-  rect(400, 185, 700, 460);
-/*text*/
-noStroke();
-textSize(30);
-textStyle(BOLD);
-  fill(230, 0, 115);
-  textAlign(CENTER, TOP);
-  text("WOAH THAT WAS HARSH WASN'T IT", 760, 350);
-  textAlign(CENTER, CENTER);
-  text("enough of that click that heart now :)", 760, 390);
-textSize(70)
-  text("💜", 750, 520);
-}
-
-if (purpleheart == true) {
-  stroke(217, 102, 255);
-  strokeWeight(8);
-  fill(255, 204, 230)
-  rect(400, 185, 700, 460);
-/*text*/
-noStroke();
-textSize(45);
-textStyle(BOLD);
-  fill(230, 0, 115);
-  textAlign(CENTER, TOP);
-  text("Just because it was hard", 760, 320);
-  textAlign(CENTER, CENTER);
-  text("doesn't mean it is impossible", 760, 400);
-  textAlign(CENTER, BOTTOM);
-  text("keep going 😚", 760, 480);
+createCanvas(windowWidth, windowHeight);
+document.body.style.margin="0";
+document.body.style.overflow="hidden";
+imageMode(CENTER);
 
 }
 
-if (purpleheart == true) {
-  
-  textSize(25);
-  textAlign(CENTER, BOTTOM);
+function draw() {
 
-  for (let i = 0; i < 2; i++){
-    let x = random( width);
-    let y = random( height);
-    frameRate(2);
-    Quotes= floor(random(0, posquotes.length));
+if (screen === 0) {
+drawMainScreen();
 
-    text(posquotes[Quotes],x, y);
-    
-    
-  }
+} else if (screen === 1) {
+drawSecondScreen();
 
-  }
+} else if (screen === 2) {
+drawAnaPage();
 
+} else if (screen === 3) {
+drawLillyPage();
+
+} else if ( screen === 4){
+drawTanyaPage();
+
+}
+}
+
+function drawMainScreen() {
+background(255);
+let x = width / 2 + 80;
+let y = height / 2- 100;
+
+image (centerImg, width / 2+ 80, height/ 2 -100, 500, 500);
+image(bg, width / 2, height /2, 2200, 900);
+image(centerImg, width / 2 + 80, height / 2 - 100, 500, 500);
+image(barbielogo, width / 2 - 30, height/ 2 + 200, 250, 100);
+image(sparklelinergif, width / 2, 50, width, 100);
+image(sparklelinergif, width / 2, height- 50, width, 100);
+}
+
+function drawSecondScreen() {
+background(255, 153, 204);
+fill(0);
+textAlign(CENTER, CENTER);
+textSize(40);
+//barbie dolls//
+
+
+let floatAmount = sin(frameCount * 0.06) * 17;
+
+//barbie dolls//
+image(barbiedoll1, width / 2 - 400, height - 950 / 2 + floatAmount, 500, 500);
+image(barbiedoll2, width / 2 + 190, height - 950 / 2 + floatAmount, 500, 500);
+image(barbiedoll3, width / 2 + 250, height - 950 / 2 + floatAmount, 500, 500);
+
+//text of names//
+image(ana, width / 2 - 400, height - 220/ 2, 250, 100);
+image(lilly, width / 2 + 5, height - 220/ 2, 165, 115);
+image(tanya, width / 2 + 420, height - 220 / 2, 330, 130);
 }
 
 
-function mousePressed() {
+function drawAnaPage (){
+let shake = sin(frameCount*0.2)*4;
+image(afghanbg, width/2,height/2, width, height);
+fill(255);
+textAlign(CENTER, CENTER);
+textSize(24);
+image(anatitle, width / 2, 70);
 
-  notif = true;
+//phone 1
+push();
+translate(width/2-580 + shake, height/2-80);
+rotate(-0.09);
+image(anaphone, 0, 0, 350, 500);
+pop();
 
+//phone 2
+push();
+translate(width/2-380 - shake, height/2+90);
+rotate(+0.07);
+image(anaphone1, 0, 0, 200, 370);
+pop();
 
-if ( mouseX > 565 && mouseX <630 && mouseY >260 && mouseY <330)
-  notif2 = true;
+//phone 3
+push();
+translate(width/2-200+shake, height/2-80);
+rotate(-0.07);
+image(anaphone2, 0, 0, 310, 430);
+pop();
 
+//phone 4
+push();
+translate(width/2+24-shake, height/2+140);
+rotate(0.10);
+image(anaphone3, 0, 0, 280, 400);
+pop();
 
-if ( mouseX > 420 && mouseX <500 && mouseY >240 && mouseY <330)
-  notif3 = true;
+//phone 5
+push();
+translate(width/2+150+shake, height/2-90);
+rotate(-0.13);
+image(anaphone4, 0, 0, 255, 320);
+pop();
 
-if ( mouseX > 900 && mouseX <1000 && mouseY >180 && mouseY <230)
-  notif4 = true;
+//phone 6
+push();
+translate(width/2+350-shake, height/2+80);
+rotate(0.09);
+image(anaphone5, 0, 0, 220, 300);
+pop();
 
-  if ( mouseX > 700 && mouseX <750 && mouseY >430 && mouseY <500)
-  notif5 = true;
+//phone 7
+push();
+translate(width/2+560+shake, height/2-70);
+rotate(-0.08);
+image(anaphone6, 0, 0, 220, 410);
+pop();
 
-  if ( mouseX > 200 && mouseX <280 && mouseY >330 && mouseY <400)
-  positive = true;
-
-if(positive == true){
-  if ( mouseX > 730 && mouseX <800 && mouseY >500 && mouseY <590){
-  purpleheart = true;
-  }
-
-  
-  notif = false;
-  notif2 = false;
-  notif3 = false;
-  notif4 = false;
-  notif5 = false
-
-  
-  
-
-  }
 }
+
+function drawLillyPage (){
+background (255, 153, 204);
+fill(255);
+textAlign(CENTER, CENTER);
+textSize(24);
+image(lillytitle, width / 2, height / 2);
+}
+
+function drawTanyaPage (){
+image(tanyabg, width/2,height/2, width, height);
+
+let floatAmount = sin(frameCount * 0.06) * 12;
+
+fill(255);
+textAlign(CENTER, CENTER);
+textSize(24);
+image(tanyatitle , width / 2, 70);
+
+
+//polaroid 1
+push();
+translate(width / 2 - 480, height / 2 - 20 +floatAmount);
+rotate(-0.15);
+image(tanyaphoto, 0, 0, 300, 540);
+pop();
+
+//polaroid 2
+push();
+translate(width / 2 - 210, height / 2 + 80 -floatAmount);
+rotate(0.08);
+image(tanyaphoto1, 0, 0, 250, 310);
+pop();
+
+//polaroid 3
+push();
+translate(width / 2, height / 2 - 50 +floatAmount);
+rotate(-0.04);
+image(tanyaphoto2, 0, 0, 250, 400);
+pop();
+
+//polaroid 4
+push();
+translate(width / 2 + 210, height / 2 + 80 -floatAmount);
+rotate(-0.02);
+image(tanyaphoto3, 0, 0, 250, 400);
+pop();
+
+//polaroid 5
+push();
+translate(width / 2 + 440, height / 2 - 20 +floatAmount);
+rotate(-0.06);
+image(tanyaphoto4, 0, 0, 300, 540);
+pop();
+}
+
+
+function drawLillyPage(){
+background (255, 153, 204);
+image(lillybg, width/2,height/2, width, height);
+fill(255);
+textAlign(CENTER, CENTER);
+textSize(24);
+image(lillytitle, width / 2 , 60);
+
+push ();
+rectMode(CENTER);
+
+fill(255,182,193);
+rect(width / 2, height / 2, 700, 450, 20);
+
+fill(200);
+ellipse (width /2 + 250, height / 2 - 120, 80);
+
+fill(240);
+rect (width / 2 - 200, height / 2 - 220, 120, 40, 20);
+
+fill(50);
+rect(width/ 2- 50, height / 2, 420, 280, 15);
+
+fill (0);
+rect(width/ 2- 50, height / 2, 380,240, 10);
+
+//photo
+push();
+translate(width/2-195, height/2+72);
+image(lillyphoto1, 0, 0, 90, 100);
+pop();
+
+//photo
+push();
+translate(width/2+90, height/2-45);
+image(lillyphoto2, 0, 0, 100, 150);
+pop();
+
+//photo
+push();
+translate(width/2-195, height/2-45);
+image(lillyphoto3, 0, 0, 90, 150);
+pop();
+
+//photo
+push();
+translate(width/2+70, height/2+75);
+image(lillyphoto4, 0, 0, 140, 90);
+pop();
+
+//photo
+push();
+translate(width/2-75, height/2+75);
+image(lillyphoto5, 0, 0, 150, 90 );
+pop();
+
+//photo
+push();
+translate(width/2-55, height/2-45);
+image(lillyphoto6, 0, 0, 190, 324);
+pop();
+
+
+
+
+
+}
+function mousePressed(){
+if (screen === 0) {
+
+let x = width / 2 + 80;
+let y = height / 2 - 100;
+
+let d = dist(mouseX, mouseY, x, y);
+if (d < 200) {
+screen = 1; // clicking onto the next page
+}
+}
+else if (screen === 1){
+if (dist(mouseX, mouseY, width / 2 - 400, height - 950 / 2) < 180){
+screen = 2;
+}
+
+else if (dist(mouseX, mouseY, width / 2 + 190, height - 950 / 2) <180){
+screen = 3;
+}
+
+else if (dist(mouseX, mouseY, width / 2 + 250, height - 950 / 2)<180){
+screen = 4;
+}
+}
+
+else if (screen===2 || screen === 3 || screen===4){
+screen=1;
+}
+}
+
+function windowResized() {
+resizeCanvas(windowWidth, windowHeight);
+}
+
 
 
