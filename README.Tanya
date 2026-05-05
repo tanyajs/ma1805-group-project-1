@@ -1,3 +1,8 @@
+Tanya Jade Su
+Individual contribution:
+
+
+
 
 Our group project idea is based on the movies Barbie where it reflects on different identities and broader cultural
 values it represents. We have collectively decided on this idea as it is simply not just a barbie doll but a representation
@@ -6,6 +11,7 @@ perspective through our childhoods which is the story we are telling through ima
 off our first introduction page where we wanted the barbie logo to stand out and as soon as you click onto the barbie head logo
 it will take you to the second screens where our three barbie dolls representing us will appear. Each barbie doll has a click function 
 to take you to their own personal page. 
+
 Each mouse interaction is used by the function of (mousePressed) where it allows the simple user navigation between each page.
 As you click onto each person's barbie doll and enter their childhood screens you can simply click again and it will take you back
 to the barbie dolls screen. For the individual screens and for my page we were inspired by using images from Pinterest since they tell
@@ -13,6 +19,7 @@ the story through pictures when we were younger and the titles of our pages to s
 the main barbie head logo which I had outlined by using Canva eraser tool which is also used for other outlining made by the others.
 On top of that I have positioned the barbie head in the middle of the first screen and the first screen everyone contributed to the codes
 for the decorations.  
+
 I was responsible for the interactive click function to transition from the first screen the second screen with the barbie dolls and our
 names where I got the barbie text font images using a barbie font generator then placed them onto the screen as well as the positions of 
 each barbie doll. I had coded and positioned each of the barbies with their names underneath. Once you've clicked onto our own personal 
@@ -20,6 +27,7 @@ barbie dolls it leads to our individual screens where we all did our own coding 
 insert my childhood photos which involve the Polaroid films and the photobooth strips. Coding my screen, I decided to use the float function
 to make them more interesting and interactive instead of leaving them to be still, I used a background image from Pinterest and loaded that 
 image into the background of my screen.  
+
 There were various challenges I encountered during coding. At the beginning of creating the code, it was a bit rough to get the hang of
 coding again since I'm still learning however, once I finished coding the second screen the creativity of the group idea was rather fun 
 to think about and see it come to life on the screens. But I think the most difficult part was positioning everything and the images and 
@@ -28,6 +36,7 @@ management is extremely important especially if it involves coding, a clear plan
 What I learnt from coding is that the smallest mistake can make the whole program break and disappear, I experienced that more times than
 I can count, but fortunately after it happened many times I made sure to look for the smallest mistake there could be but it was an experience
 to have with coding.
+
 There was good communication within the group, we all had a clear understanding of what we wanted the theme to be and how we wanted it to visually look.
 All of us contributed different skills so there was a lot of problem-solving skills used, and many decisions were made and changed throughout the project, 
 but we clearly expressed our ideas and considered every suggestion positively.
