@@ -45,7 +45,7 @@ ana = loadImage ('images/Anahita-23-04-2026.png')
 tanya = loadImage ('images/Tanya-Jade-23-04-2026.png')
 
 
-//tanyas page//
+//tanyas page images//
 tanyaphoto= loadImage('images/photobooth1.png')
 tanyaphoto1= loadImage('images/camera.png')
 tanyaphoto2= loadImage('images/polariod1.png')
@@ -54,7 +54,7 @@ tanyaphoto4= loadImage('images/photobooth2.png')
 
 tanyabg = loadImage('images/tanyabg.jpg')
 
-//anas page//
+//anas page images//
 anaphone= loadImage('images/anaphone.PNG')
 anaphone1= loadImage('images/anaphone1.PNG')
 anaphone2= loadImage('images/anaphone4.PNG')
@@ -66,7 +66,7 @@ anaphone6= loadImage('images/anaphone6.PNG')
 afghanbg= loadImage('images/afghanbg.JPEG');
 
 
-//lillys page//
+//lillys page images//
 lillyphoto1= loadImage('images/lilly1.jpg')
 lillyphoto2= loadImage('images/lilly2.jpg')
 lillyphoto3= loadImage('images/lilly3.jpg')
@@ -76,17 +76,19 @@ lillyphoto6= loadImage('images/lilly6.PNG')
 
 lillybg= loadImage('images/lillybg.png');
 
+  //main screen images//
 bg = loadImage('images/Untitled design-9.png');
 centerImg = loadImage ('images/barbiehead.png');
 barbielogo = loadImage('images/BarbieLogo.gif');
 sparklelinergif= loadImage('images/sparkleliner.gif');
 
+  //page titles//
 tanyatitle = loadImage('images/Precious-memories-of-Tanya-in-04-05-2026.png');
 anatitle = loadImage('images/A-glimpse-into-Ana-s-childhood-04-05-2026.png');
 lillytitle = loadImage('images/A-peek-into-Lilly-s-younger-ye-04-05-2026.png')
 
 }
-
+//setup of basic layout//
 function setup() {
 createCanvas(windowWidth, windowHeight);
 document.body.style.margin="0";
@@ -95,7 +97,7 @@ imageMode(CENTER);
 
 }
 
-//clicking onto next screens//
+//controls which screen is shown//
 function draw() {
 
 if (screen === 0) {
@@ -115,7 +117,7 @@ drawTanyaPage();
 
 }
 }
-
+//controls the first barbie intro page//
 function drawMainScreen() {
 background(255);
 let x = width / 2 + 80;
@@ -130,7 +132,7 @@ image(sparklelinergif, width / 2, 50, width, 100);
 image(sparklelinergif, width / 2, height- 50, width, 100);
 }
 
-
+//displays the dolls//
 function drawSecondScreen() {
 background(255, 153, 204);
 fill(0);
@@ -152,15 +154,18 @@ image(lilly, width / 2 + 5, height - 220/ 2, 165, 115);
 image(tanya, width / 2 + 420, height - 220 / 2, 330, 130);
 }
 
-//shake and framecount allow it to move sideways with speed//
+//slight shaking movement//
 function drawAnaPage (){
 let shake = sin(frameCount*0.2)*4;
+  
+//background image//
 image(afghanbg, width/2,height/2, width, height);
 fill(255);
 textAlign(CENTER, CENTER);
 textSize(24);
 image(anatitle, width / 2, 70);
 
+//each move slightly to the left and right//
 //phone 1
 push();
 translate(width/2-580 + shake, height/2-80);
@@ -224,7 +229,7 @@ image(lillytitle, width / 2, height / 2);
 function drawTanyaPage (){
 image(tanyabg, width/2,height/2, width, height);
 
-  //float and framecount is used to move up and down with speed//
+  //floating effect for polariods//
 let floatAmount = sin(frameCount * 0.06) * 12;
 
 fill(255);
@@ -269,7 +274,7 @@ image(tanyaphoto4, 0, 0, 300, 540);
 pop();
 }
 
-
+//camera style layout with photos//
 function drawLillyPage(){
 background (255, 153, 204);
 image(lillybg, width/2,height/2, width, height);
@@ -338,7 +343,7 @@ pop();
 
 
 }
-//mouse pressed allows user to click in their specific position//
+//clicking between screens//
 function mousePressed(){
 if (screen === 0) {
 
@@ -368,7 +373,7 @@ else if (screen===2 || screen === 3 || screen===4){
 screen=1;
 }
 }
-
+//keeps canvas full screen when resized//
 function windowResized() {
 resizeCanvas(windowWidth, windowHeight);
 }
