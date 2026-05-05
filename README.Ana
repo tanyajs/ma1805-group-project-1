@@ -1,0 +1,63 @@
+
+Anahita Siddiqi
+Individual contribution:
+
+For this immersive group project, we were inspired by Barbie movies and how she represents empowerment of unique identities. 
+I initially came up with the Barbie idea and I envisioned what the first page would look like in another class where we discussed 
+feminism, then I introduced this idea to the group and we further developed the idea together to make it more personal to us as 
+individuals. During the planning process of this project, rather than focusing on Barbie as a doll, we used it to illustrate our
+own interpretations of it representing ourselves and our childhoods. Each of us created individual pages to portray our distinctive 
+childhood memories in different ways, however the theme remains consistent throughout the project. 
+
+This project begins with a Barbie-themed introduction page with a pink background and the Barbie head logo, name logo and sparkly visuals.
+When the user clicks on the head logo, which takes the audience to the second screen, a pink background where there are three dolls
+representing each one of us with our names in the Barbie-font underneath the dolls. Users can click each doll to take them to our
+individual pages. To complete the aesthetic, I used a website called GifCities and used a Barbie logo and pink sparkle borders which 
+are both displayed on the first page. 
+
+The focus was on demonstrating childhood memories and nostalgia through smartphones. A variety of telephones, such as older versions 
+of phones like flip phones and Blackberry’s as well as newer models of telephones like iPhones were used to place images inside the 
+phone screens. Each image highlights how significantly influential Barbie was in my formative years. The reason for using telephones
+was to exhibit how childhood was captured, compared to my peers who had their memories mostly photographed by polaroids and cameras.
+To connect the page to my identity, elements of culture like a traditional Afghan carpet in the background were deployed. My page is
+not just about the images, but about where I come from, what devices I grew up with and what “Barbie” represents.  
+
+In terms of coding, I applied coding techniques learned in class throughout the year and adapted them to suit this project’s concept.
+We collectively added the background and Barbie head, then I individually added the Barbie name logo with the sparkle borders on the 
+first page. For the floating animation of the dolls in the second page, I used the sin() function in p5.js which makes the dolls slightly
+move up and down. I stored this in a variable called floatAmount, which allowed me to manage the position of the dolls. I also worked on 
+the interaction between the second page and the three individual pages, by ensuring that each doll takes you to the correct screen once 
+clicked by using a variable called “screen” to switch between the pages, then mousePressed() to change the screen when the user clicked on
+each doll. 
+
+For my page, Pinterest was used to explore different phone designs, which helped me portray the evolution of technology on my page.
+Then to polish the images, I used a background removal tool by Adobe. Editing my childhood images onto the mobile screens using Canva,
+I added them to my page alongside a poetic short title in Barbie font describing how those childhood photos were captured.
+A small shaking movement to the images was added so that they are brought to life by creating a function called “shake” using the 
+sin() function, I then added this to the position of each image to make the images move slightly left and right. 
+
+This project was meaningful to me because it combined my cultural identity with designing and coding and showing how those 
+childhood memories have been preserved by technology. Our group worked well together despite the fact we were not always in 
+the same location, we communicated frequently, encouraged and helped strengthen each other’s ideas. Everyone possesses different
+attributes, which helped us support one another during the coding and design process. One challenge we faced was getting everything 
+to work seamlessly, particularly the image placement and interactions, however through trial and error we were able to fix these issues.
+Therefore, this project improved my understanding of coding and working with images, animation and interactions, including confidence 
+within myself and my ideas. 
+
+Sources:
+
+GifCities (barbie name logo, sparkles borders)
+https://web.archive.org/web/20091027154515/http://geocities.com/girlproject88/image011.gif 
+https://web.archive.org/web/20091027001319/http://kr.geocities.com/clara601109/bg/bg29.gif 
+
+Pinterest (images of telephones)
+https://uk.pinterest.com/pin/912753049495396698/
+https://uk.pinterest.com/pin/912753049495396696/
+https://uk.pinterest.com/pin/912753049495395925/
+https://uk.pinterest.com/pin/80994493293209120
+https://uk.pinterest.com/pin/4222193396120503
+https://uk.pinterest.com/pin/46795283623764852
+https://uk.pinterest.com/pin/847661961137131879
+
+Adobe Express (background removal tool)
+https://www.adobe.com/express/feature/image/remove-background/white?mv=search&mv2=paidsearch&sdid=PYPVPPB8&ef_id=EAIaIQobChMI8ofT2OSblAMVDIhQBh0SzwEOEAAYASAAEgKqLvD_BwE:G:s&s_kwcid=AL!3085!3!761188290442!b!!g!!remove%20background!22709922870!187202599328&gad_source=1&gad_campaignid=22709922870&gbraid=0AAAAADraYsLVA44KCNhvihbbAvrHerqEm&gclid=EAIaIQobChMI8ofT2OSblAMVDIhQBh0SzwEOEAAYASAAEgKqLvD_BwE. 
