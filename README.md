@@ -40,10 +40,15 @@ Sources:
 Barbie head logo https://logo.com/blog/barbie-logo
 
 Barbie name logo https://web.archive.org/web/20091027154515/http://geocities.com/girlproject88/image011.gif 
+
 Pink sparkles border https://web.archive.org/web/20091027001319/http://kr.geocities.com/clara601109/bg/bg29.gif 
+
 Barbie dolls https://www.walmart.com/ip/Mattel-Barbie-Glitz-Doll-Assortment-Plastic-Multicolor-0-405-lb/149686594 
+
 Group names in Barbie font https://www.textstudio.com/logo/barbie-font-generator-1158#google_vignette 
-Poetic titles on each individual doll page https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.textstudio.com/logo/barbie-font-generator-1158&ved=2ahUKEwjrmoG8kKGUAxXodUEAHbBMHIcQFnoECAwQAQ&usg=AOvVaw35FKZ6VS_x661BcBVKFTrX 
+
+Poetic titles on each individual doll page
+https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.textstudio.com/logo/barbie-font-generator-1158&ved=2ahUKEwjrmoG8kKGUAxXodUEAHbBMHIcQFnoECAwQAQ&usg=AOvVaw35FKZ6VS_x661BcBVKFTrX 
 
 Afghan carpet background on Ana’s page https://www.benuta.co.uk/rug-laury-rose-60006806-34101.html?selected_size=41271&utm_campaign=626755918213&utm_medium=paid&pnt_id=2680086676516&h_ad_id=4260609359481&utm_source=pinterest&utm_content=2680086676516&pp=0 
 
@@ -54,7 +59,10 @@ https://uk.pinterest.com/pin/80994493293209120
 https://uk.pinterest.com/pin/4222193396120503
 https://uk.pinterest.com/pin/46795283623764852
 https://uk.pinterest.com/pin/847661961137131879
-Pink sparkly background on Lilly’s page https://uk.pinterest.com/pin/4503668373197247/
+
+
+Pink sparkly background on Lilly’s page
+https://uk.pinterest.com/pin/4503668373197247/
 
 Pink heart background on Tanya’s page https://uk.pinterest.com/pin/1090363759785459666/
 
