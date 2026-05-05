@@ -1,29 +1,38 @@
+
+//background images//
 let bg;
 let centerImg;
 let barbielogo;
 let sparklelinergif;
 
+//screen control//
 let screen = 0; // 0 = main screen, 1 = new screen with dolls, 2/3/4 = childhood
 let barbiedoll1, barbiedoll2, barbiedoll3;
 let lilly, tanya, ana;
 
+//title images//
 let tanyaphoto, tanyaphoto1, tanyaphoto2, tanyaphoto3, tanyaphoto4;
 
+
+//background images//
 let tanyabg;
 
 let afghanbg;
 
 let lillybg;
 
+//page images//
 let anaphone, anaphone1, anaphone2, anaphone3, anaphone4, anaphone5, anaphone6;
 
 let lillyphoto1, lillyphoto2, lillyphoto3;
 let lillyphoto4, lillyphoto5, lillyphoto6;
 
+//title of individual pages//
 let tanyatitle, anatitle, lillytitle;
 
-
+//loading the images onto the screen//
 function preload() {
+  
 //second barbie dolls//
 
 barbiedoll1 = loadImage('images/barbiedoll1.png')
@@ -86,6 +95,7 @@ imageMode(CENTER);
 
 }
 
+//clicking onto next screens//
 function draw() {
 
 if (screen === 0) {
@@ -111,6 +121,7 @@ background(255);
 let x = width / 2 + 80;
 let y = height / 2- 100;
 
+//centering and positioning of the images//
 image (centerImg, width / 2+ 80, height/ 2 -100, 500, 500);
 image(bg, width / 2, height /2, 2200, 900);
 image(centerImg, width / 2 + 80, height / 2 - 100, 500, 500);
@@ -119,14 +130,15 @@ image(sparklelinergif, width / 2, 50, width, 100);
 image(sparklelinergif, width / 2, height- 50, width, 100);
 }
 
+
 function drawSecondScreen() {
 background(255, 153, 204);
 fill(0);
 textAlign(CENTER, CENTER);
 textSize(40);
-//barbie dolls//
 
-
+  
+//floating barbie dolls//
 let floatAmount = sin(frameCount * 0.06) * 17;
 
 //barbie dolls//
@@ -140,7 +152,7 @@ image(lilly, width / 2 + 5, height - 220/ 2, 165, 115);
 image(tanya, width / 2 + 420, height - 220 / 2, 330, 130);
 }
 
-
+//shake and framecount allow it to move sideways with speed//
 function drawAnaPage (){
 let shake = sin(frameCount*0.2)*4;
 image(afghanbg, width/2,height/2, width, height);
@@ -208,9 +220,11 @@ textSize(24);
 image(lillytitle, width / 2, height / 2);
 }
 
+
 function drawTanyaPage (){
 image(tanyabg, width/2,height/2, width, height);
 
+  //float and framecount is used to move up and down with speed//
 let floatAmount = sin(frameCount * 0.06) * 12;
 
 fill(255);
@@ -267,6 +281,7 @@ image(lillytitle, width / 2 , 60);
 push ();
 rectMode(CENTER);
 
+//width and height determine the size of the rectangle and position//
 fill(255,182,193);
 rect(width / 2, height / 2, 700, 450, 20);
 
@@ -323,6 +338,7 @@ pop();
 
 
 }
+//mouse pressed allows user to click in their specific position//
 function mousePressed(){
 if (screen === 0) {
 
