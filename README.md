@@ -21,7 +21,7 @@ Lilly - Visual Designer and Researcher
 Used canva to create visual assets, found reference material and contributed to the overall aesthetic of the project. 
 
 Project Description & Themes:
-Our project is inspired by Barbie and how she represents individuality while empowering women. We used Barbie as a way to present our own childhoods, technology we grew up with and personal identities. 
+Our project is inspired by Barbie and how she represents individuality while empowering women. We used Barbie as a way to present our own childhoods, technology we grew up with and personal identities through early 2000s style aesthetics.
 
 To start, the project is introduced with a Barbie-themed pink aesthetic screen, including a pink background, sparkles and the iconic Barbie logo. This engaging web page involves user interaction, when the user clicks on the Barbie head, it takes them to the second page where three Barbie dolls are displayed, representing each one of us. Additionally, each doll has the ability to be clicked to enter each individual page.
 
